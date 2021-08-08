@@ -19,6 +19,7 @@ class ProfileFragment : Fragment() {
 
     val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) {
         binding.img.setImageURI(it)
+
     }
 
     private lateinit var preferences: SharedPreferences
