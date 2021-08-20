@@ -5,12 +5,12 @@ import android.content.Intent
 import android.content.SharedPreferences
 import android.net.Uri
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.fragment.app.Fragment
 import my.tarc.contactlist2.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -19,7 +19,6 @@ class ProfileFragment : Fragment() {
 
     val getContent = registerForActivityResult(ActivityResultContracts.GetContent()) {
         binding.img.setImageURI(it)
-
     }
 
     private lateinit var preferences: SharedPreferences

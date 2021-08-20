@@ -17,6 +17,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_secondActivity"
+            app:destination="@id/secondActivity" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -33,4 +36,9 @@
         android:name="my.tarc.contactlist2.ProfileFragment"
         android:label="@string/profile"
         tools:layout="@layout/fragment_profile" />
+    <activity
+        android:id="@+id/secondActivity"
+        android:name="my.tarc.contactlist2.SecondActivity"
+        android:label="activity_second"
+        tools:layout="@layout/activity_second" />
 </navigation>
